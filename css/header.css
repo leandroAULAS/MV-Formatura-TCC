@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; Deixar fixado se quiser
+    z-index: 1000;
+    width: 100%; */
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.divlogo {
+    width: 6.8rem;
+    height: 6.2rem;
+}
+
+.divlogo img {
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+#menu a:hover {
+    background: rgba(109, 109, 109, 0.281);
+    border-radius: 5px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.iconesheader {
+    display: none;
+}
+
+@media(max-width: 769px) {
+    header {
+        justify-content: space-between;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 0px;
+        top: 100px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.938);
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        text-align: right;
+    }
+    #nav.active #menu {
+        height: calc(60vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+        border-radius: 0px 0px 0px 30px;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer {
+        display: block;
+        width: 30px;
+        border-top: 3px solid;
+        color: #fff;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7.5px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .iconesheader {
+        display: flex;
+        gap: 5px;
+    }
+    .iconesheader a img {
+        height: 2em;
+        width: 2em;
+    }
+}

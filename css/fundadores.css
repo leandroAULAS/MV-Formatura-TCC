@@ -1,0 +1,115 @@
+.fundadores {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.fundadores h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2.2rem;
+}
+
+.imagensf {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#card {
+    transform-style: preserve-3d;
+    width: 9rem;
+    height: 15rem;
+    transition: all .5s ease;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#card2 {
+    transform-style: preserve-3d;
+    width: 9rem;
+    height: 15rem;
+    transition: all .5s ease;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.back {
+    background-color: #614f4f86;
+    /*#FF6060;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#textback{
+    color: whitesmoke;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+}
+
+#textback2{
+    color: whitesmoke;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+}
+
+
+#face {
+    position: absolute;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.alinhartxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alinhartxt p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    /* rgb(77, 185, 248); */
+}
+
+@media screen and (min-width: 769px) {
+    #card {
+        width: 20rem;
+        height: 30rem;
+    }
+    #card2 {
+        width: 20rem;
+        height: 30rem;
+    }
+    .alinhartxt p {
+        font-size: 2rem;
+    }
+    #textback {
+        font-size: 1rem;
+    }
+    #textback2 {
+        font-size: 1rem;
+    }
+}

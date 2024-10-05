@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Holtwood One SC', serif;
+    border: hidden;
+    text-decoration: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+
+.galeria {
+    text-align: center;
+    color: #000000;
+}
+
+.galeria h1 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+}
+
+.galeria p {
+    font-size: 1.5rem;
+}
+
+.carousel {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.carousel div {
+    display: flex;
+}
+
+.carousel div img {
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.linha img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.informacoes {
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+.informacoes h2 {
+    color: #000000;
+}
+
+.informacoes p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imageminformacoes {
+    display: none;
+}
+
+.img14brigadeiro {
+    height: 84%;
+}
+
+@media screen and (min-width: 769px) {
+    .informacoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .informacoes p {
+        font-size: 1.5rem;
+    }
+    .imageminformacoes {
+        width: 30%;
+        display: unset;
+        margin-right: 5rem;
+    }
+    .imageminformacoes img {
+        width: 100%;
+        transform: scaleX(-1);
+    }
+}

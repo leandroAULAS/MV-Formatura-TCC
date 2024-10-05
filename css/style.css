@@ -1,0 +1,416 @@
+body,
+ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Holtwood One SC', serif;
+    border: hidden;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.escolha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../images/festa2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.yellow {
+    margin-left: 40px;
+    width: 5vh;
+    height: 20vh;
+    background-color: #000000;
+    /* #F9D189; */
+    align-items: center;
+    border-radius: 10px;
+}
+
+.escolha img {
+    width: 30%;
+    padding-right: 15px;
+    opacity: 0;
+}
+
+.escolha p {
+    color: #000000;
+    font-size: 1rem;
+    padding-left: 15px;
+    /* text-shadow: 10px 3px 12px black; */
+}
+
+.quemsomos {
+    overflow: hidden;
+}
+
+.quemsomos h1 {
+    text-align: center;
+    color: black;
+    font-size: 2.2rem;
+}
+
+.conteudoquemsomos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudoquemsomos img {
+    height: 10em;
+    width: 10em;
+}
+
+.conteudoquemsomos p {
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+}
+
+.bannerdedados {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.bannerdedados img {
+    width: 100%;
+}
+
+.item1 {
+    width: 20%;
+    /* 15% tela grande */
+    background-color: #f8f6ef;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    transition: translate(-50%, -50);
+    box-shadow: 1px 5px 5px black;
+    font-size: 0.5rem;
+    /* font-size: 1rem; Tela grande */
+}
+
+.item2 {
+    width: 20%;
+    /* 15% tela grande */
+    background-color: #f8f6ef;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 70%;
+    transition: translate(-50%, -50);
+    box-shadow: 1px 5px 5px black;
+    font-size: 0.5rem;
+    /* font-size: 1rem; Tela grande */
+}
+
+.item3 {
+    width: 20%;
+    /* 15% tela grande */
+    background-color: #f8f6ef;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 10%;
+    transition: translate(-50%, -50);
+    box-shadow: 1px 5px 5px black;
+    font-size: 0.5rem;
+    /* font-size: 1rem; Tela grande */
+}
+
+.ha {
+    display: flex;
+    justify-content: center;
+}
+
+.he {
+    display: flex;
+    justify-content: center;
+}
+
+.hi {
+    display: flex;
+    justify-content: center;
+}
+
+.oquenosoferecemos {
+    overflow: hidden;
+}
+
+.oquenosoferecemos h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.conteudooquenosoferecemos {
+    display: flex;
+}
+
+.conteudooquenosoferecemos img {
+    width: 50%;
+}
+
+.conteudooquenosoferecemos p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botaoentreemcontato {
+    display: flex;
+    justify-content: center;
+}
+
+.entreemcontato {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: #FFFFFF;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Holtwood One SC', serif;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.entreemcontato:hover {
+    border: solid #CB2E2E 0;
+    background: #FF0000;
+    background-image: -webkit-linear-gradient(top, #FF0000, #CB2E2E);
+    background-image: -moz-linear-gradient(top, #FF0000, #CB2E2E);
+    background-image: -ms-linear-gradient(top, #FF0000, #CB2E2E);
+    background-image: -o-linear-gradient(top, #FF0000, #CB2E2E);
+    background-image: -webkit-gradient(to bottom, #FF0000, #CB2E2E);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+
+/*.fundadores{
+    margin-top: 5rem;
+    margin-bottom: 8rem
+ }
+
+.fundadores h1{
+    
+    text-align: center;
+    color: #FF6060;
+    font-size: 2.2rem;
+
+    padding-bottom: 2rem;
+}
+
+
+.imagensfundadores{
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+
+.imagemfundadores{
+    width: 25rem; /*largura 
+    height: 35rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #16b0f1;
+}
+.imagemfundadores img{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.imagemfundadores2{
+    width: 25rem; /*largura 
+    height: 35rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #16b0f1;
+}
+.imagemfundadores2 img{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+*/
+
+.depoimentos {
+    overflow: hidden;
+}
+
+.depoimentos h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.pessoas+.pessoas {
+    margin-bottom: 3rem;
+}
+
+.pessoa {
+    display: flex;
+    width: 100%
+}
+
+.imagempessoa img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.conteudopessoa {
+    margin-left: 10px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.conteudopessoa h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.conteudopessoa p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.aqui {
+    color: red;
+}
+
+.aaa::after{
+    content: "Compartilhe conosco esse momento incrível!";
+    animation-name: ai;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    transition: ease;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        color: #CB2E2E;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    .escolha {
+        background-image: url("../images/festa1.jpg");
+        height: 90%;
+    }
+    .escolha img {
+        width: 25%;
+    }
+    .escolha p {
+        font-size: 2.8rem;
+    }
+    .yellow {
+        height: 35vh;
+    }
+    .conteudoquemsomos p {
+        font-size: 1.7rem;
+        margin-left: 10rem;
+        width: 700px;
+    }
+    .conteudoquemsomos img {
+        height: 20em;
+        width: 20em;
+    }
+    .item1,
+    .item2,
+    .item3 {
+        font-size: 1rem;
+        width: 15%;
+    }
+    .conteudooquenosoferecemos p {
+        font-size: 1.7rem;
+    }
+    .entreemcontato {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    .imagemfundadores {
+        font-size: 1.5rem;
+    }
+    .imagemfundadores img {
+        width: 100%;
+    }
+    .pessoas {
+        display: flex;
+        flex-direction: row;
+    }
+    .quemsomos h1 {
+        font-size: 3rem;
+    }
+    .oquenosoferecemos h1 {
+        font-size: 3rem;
+    }
+    .galeria h1 {
+        font-size: 3rem;
+    }
+    .fundadores h1 {
+        font-size: 3rem;
+    }
+    .depoimentos h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@keyframes ai{
+    0%{
+        content: "Compartilhe conosco esse momento incrível!";
+    }
+    40%{
+        content: "Eventos, formaturas, álbuns e muito mais!";
+    }
+    50%{
+        content: "MV Formatura, sempre ao seu dispor!";
+    }
+    75%{
+        content: "Conte com a gente para o seu evento!";
+    }
+    100%{
+        content: "Compartilhe conosco esse momento incrível!";
+    }
+} 

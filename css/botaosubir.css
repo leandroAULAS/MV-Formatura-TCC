@@ -1,0 +1,29 @@
+#subirTopo {
+    text-decoration: none;
+    background: #000000;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    opacity: .8;
+    letter-spacing: 2px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+#subirTopo :hover {
+    opacity: 1.0;
+}
+
+#subirTopo img {
+    width: 1rem;
+    height: 1rem;
+    filter: invert(100%);
+}

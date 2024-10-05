@@ -1,0 +1,100 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000
+}
+
+.logofooter{
+    width: 25%;
+}
+
+.logofooter img{
+    width: 100%;
+    
+}
+
+.conteudofooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contatofooter{
+    text-align: start;
+    color: #ffffff;
+}
+
+.contatofooter p{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contatofooter h2{
+    text-align: center;
+}
+
+.icones a img{
+    height:2em;
+    width:2em;
+}
+
+.textoeicone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.textoeicone img{
+    height:2em;
+    width:2em;
+}
+
+.textoeicone p{
+    margin-left: 0.5rem;
+}
+
+.textoeicone p a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.mapa{
+    width: 100%;
+    height: 20rem;
+}
+
+
+
+@media screen and (min-width: 769px) { 
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .conteudofooter{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+       
+    }
+
+    .contatofooter{
+
+        text-align: start;
+        margin-right: 2.5rem ;
+    }
+
+    .mapa{
+        width: 20rem; /*largura */
+        height: 18rem; /* Altura */
+        
+    }
+
+    .textoeicone{
+        justify-content: flex-start;
+    }
+
+}
