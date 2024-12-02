@@ -1,0 +1,3 @@
+$('.carousel').slick({
+    infinite: true,
+});
